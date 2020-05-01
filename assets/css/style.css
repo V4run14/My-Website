@@ -628,17 +628,27 @@ th{
 .resume .carousel {
   background: rgba(255, 255, 255, 0.05);
   padding: 2px;
-  width: 60%;
+  width: 40%;
   margin-top: 30px;
-  margin-left: 20%;
-  height: 100px;
+  margin-left: 30%;
+  height: 350px;
 }
 
-.carousel {
-  position: relative;
-  width: 200px;
-  height: 100px;
+@media (max-width: 800px) {
+  .resume .carousel {
+    width: 80%;
+    margin-left: 10%;
+    height: 400px;
+  }
 }
+
+.carousel h1{
+  font-size: 26px;
+  margin-top: 20px;
+  color: #35e8e5;
+}
+
+
 
 ol.carousel-indicators {
   position: absolute;
@@ -662,100 +672,20 @@ ol.carousel-indicators li.active {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
-.services .icon-box {
-  text-align: center;
-  background: rgba(204, 204, 204, 0.1);
-  padding: 80px 20px;
-  transition: all ease-in-out 0.3s;
+.jumbotron{
+  background: rgba(255, 255, 255, 0.15); 
+  margin-top: 20px;
 }
-
-.services .icon-box .icon {
-  margin: 0 auto;
-  width: 64px;
-  height: 64px;
-  background: #9742d4;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-  transform-style: preserve-3d;
-}
-
-.services .icon-box .icon i {
-  color: #fff;
-  font-size: 28px;
-}
-
-.services .icon-box:hover .icon{
-  
-  width: 1px;
-  height: 1px;
-  visibility: hidden;
-}
-
-.services .icon-box .icon::before {
-  position: absolute;
-  content: '';
-  left: -8px;
-  top: -8px;
-  height: 0%;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 5px;
-  transform: translateZ(-1px);
-}
-
-.services .icon-box h4 {
+.jumbotron h1{
+  font-size: 36px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 24px;
 }
 
-.services .icon-box:hover h4{
-  margin-top: 0px;
-  font-size: 16px;
+.jumbotron li {
+  font-size: 20px;
 }
-
-.services .icon-box h4 a {
-  color: #fff;
-}
-
-.services .icon-box p {
-  line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 0;
-  visibility: hidden;
-}
-
-
-
-.services .icon-box:hover p {
-  visibility: visible;
-}
-
-.services .icon-box:hover {
-  background: #2510c4;
-  border-color: #2510c4;
-  visibility: visible;
-}
-
-.services .icon-box:hover .icon {
-  background: #fff;
-}
-
-.services .icon-box:hover .icon i {
-  color: #2510c4;
-}
-
-.services .icon-box:hover .icon::before {
-  background: #2510c4;
-}
-
-.services .icon-box:hover h4 a, .services .icon-box:hover p {
-  color: #fff;
-}
-
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
